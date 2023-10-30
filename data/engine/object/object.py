@@ -39,6 +39,12 @@ class Object:
 
 
     def construct(self):
+        """
+        Runs directly after Object Initialization.
+
+        :return: None
+        :rtype: None
+        """
         self.onNetworkSpawn_Event.bind(self.onNetworkSpawn)
         self.onNetworkUpdate_Event.bind(self.onNetworkUpdate)
         return
@@ -81,6 +87,14 @@ class Object:
         return components
 
     def serialize(self, _id=''):
+        """
+        Returns a dict that is prepared to be sent over the network.
+
+        :param _id: Optional "kind" of ingredients.
+        :type _id: str
+        :return: Serialized Object.
+        :rtype: dict
+        """
         rep_id = ''
 
         if _id == '':

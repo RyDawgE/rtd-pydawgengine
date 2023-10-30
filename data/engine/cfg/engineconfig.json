@@ -1,0 +1,18 @@
+{
+    "config":
+    {
+        "caption": "Chipset",
+        "dimensions": [640, 480],
+        "icon": "r'data\\assets\\sprites\\me.png'",
+        "fullscreen": false,
+        "hideMouseCursor": false,
+        "debugMode": false,
+
+        "network":
+        {
+            "connectToServer": false,
+            "address": "localhost"
+        }
+    }
+}
+
